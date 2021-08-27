@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/cv.css" rel="stylesheet" type="text/css" media="all">
     <title>Document</title>
 </head>
 <body>
 
     <div class="text-wrapper">
-        <a href="index.html">Go back</a>
+        <a href="index.html">Volver</a>
 
         <h1>Hoja de vida</h1>
 
-        <h3>Kevin Baena Durango</h3>
-
-        <img src="imagenes/1629559463403.jpg
-        " alt="" width="200" height="300">
-        <br>
+<div class="flex-container main-container ">
+    <aside class="lateral-bar-container">
+        <div class="flex-container">
+            <div class="photo-container">
+                <img src="imagenes/1629559463403.jpg" alt="" width="80" height="80">
+            </div>
+            <div>
+                <h3>Kevin Baena Durango</h3>
+                <p>Full-stack web developer</p>
+            </div>
+        </div>
 
         <h4>Información personal</h4>
         <ul>
@@ -37,19 +44,54 @@
         <br>
 
         <h4>Lenguajes</h4>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-        </ul>
+        <div class="language-bars-container">
+            
+            <div class="language-bar">
+                <div class="language-bar-fill-html">
+                    HTML
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-bar-fill-css">
+                    CSS
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-bar-fill-js">
+                    JavaScript
+                </div>
+            </div>
+            <div class="language-bar">
+                <div class="language-bar-fill-php">
+                    PHP
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
 
-        <br>
         <h4>Proyectos realizados</h4>
-        <ul>
-            <li>Sitios web en Laravel</li>
-        </ul>
-    </div>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="imagenes/laravel-1.png" alt="" width="450" height="400">
+                <p>Sitio web creado en Laravel</p>
+            </div>
+            <div class="project-box">
+                <img src="imagenes/laravel-2.png" alt="" width="450" height="400">
+                <p>Sitio web creado en Laravel</p>
+            </div>
+            <div class="project-box">
+                <img src="imagenes/laravel-3.png" alt="" width="450" height="400">
+                <p>Sitio web creado en Laravel</p>
+            </div>
+            <div class="project-box">
+                <img src="imagenes/laravel-4.png" alt="" width="450" height="400">
+                <p>Sitio web creado en Laravel</p>
+            </div>
+        </div>
+        
+    </main>
+</div>
     
 </body>
 </html>
