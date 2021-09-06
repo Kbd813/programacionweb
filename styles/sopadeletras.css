@@ -1,0 +1,38 @@
+.contenedor{
+    display: flex;
+    -ms-flex-item-align: center;
+}
+
+.contenedor > div {
+    margin: 40px;
+}
+
+* {
+    font-size: 50px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+body{
+    background-color: lightcyan;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    background-color: beige;
+}
+
+td:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+
+p{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
