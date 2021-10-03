@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   font-family: "Poppins";
   overflow-x: hidden;
-  color: white;
 }
 
 .navbar {
@@ -20,6 +19,10 @@ body {
   align-items: center;
   padding: 10px 30px;
   box-sizing: border-box;
+}
+
+.logo {
+  color: black;
 }
 
 .links {
