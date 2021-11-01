@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ficha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/ficha.js" defer></script>
+    <title>Ficha</title>
+</head>
+<body>
+
+    <div id="files-container" class="files-container">
+        <h1>Estudiantes</h1>
+        <a href="index.html" style="font-size: 1.5rem;">Volver</a>
+    </div>
+
+    <template id="file-template">
+        <div class="container">
+            <div class="info-container">
+                <div class="info-title"> <h2 id="name"></h2> </div>
+                <div class="info-links"> 
+                    <div><a href="" id="github"> <i class="fab fa-github"></i> GitHUB</a></div>
+                    <div><a href="" id="neocities"> <i class="fas fa-columns"></i> Neocities</a></div>
+                    <div><a href="" id="email"> <i class="fas fa-at"></i> Email</a></div>
+                    <div><a href="" id="whatsapp"> <i class="fab fa-whatsapp"></i> WhatsAPP</a></div>
+                </div>
+                <div class="info-image">
+                    <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png" alt="">
+                </div>
+            </div>
+            <div class="activity-container">
+                <table>
+                    <thead>
+                        <th>Actividades</th>
+                        <th>% UI/UX</th>
+                        <th>% Dev</th>
+                    </thead>
+                    <tbody id="activities-container">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="level-container">
+                <div class="skill-container">
+                    <div id="html-percentage"></div>
+                    <a href="">HTML</a>
+                </div>
+                <div class="skill-container">
+                    <div id="css-percentage"></div>
+                    <a href="">CSS</a>
+                </div>
+                <div class="skill-container">
+                    <div id="js-percentage"></div>
+                    <a href="">JS</a>
+                </div>
+                <div class="skill-container">
+                    <div id="ui-percentage"></div>
+                    <a href="">UI</a>
+                </div>
+                <div class="skill-container">
+                    <div id="ux-percentage"></div>
+                    <a href="">UX</a>
+                </div>
+                <div class="skill-container">
+                    <div id="rate"></div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="activity-template">
+        <tr> 
+            <td id="activity-name"></td>
+            <td id="uiux-state"></td>
+            <td id="tech-state"></td> 
+        </tr>
+    </template>
+</body>
+</html>
