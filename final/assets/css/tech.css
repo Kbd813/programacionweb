@@ -1,0 +1,171 @@
+.wrapper{
+  background: url('../assets/technology/background-technology-mobile.jpg') no-repeat top / cover;
+  padding: 0;
+}
+
+.tech{
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  justify-items: center;
+  padding: 24px 0;
+  gap: 32px;
+  text-align: center;
+}
+
+.navigation{
+  padding: 24px 24px 0 24px;
+}
+
+.heading--5__text{
+  grid-column: 1 / -1;
+}
+
+.tech-menu{
+  display: flex;
+  gap: 20px;
+  font-family: 'Bellefair', serif;
+  font-size: 16px;
+}
+
+.tech-menu > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--color-3-r), var(--color-3-g), var(--color-3-b), 0.5);
+  cursor: pointer;
+}
+
+.tech-menu__item:hover{
+  border-color: var(--color-3);
+}
+
+.tech-menu__item--active{
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  color: var(--color-1);
+}
+
+.tech__image{
+  overflow: hidden;
+}
+
+.tech__image--portrait{
+  display: none;
+}
+
+.tech__image--landscape{
+  width: 101%;
+}
+
+.tech__right{
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tech__name{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper{
+    background: url('../assets/technology/background-technology-tablet.jpg') no-repeat top / cover;
+  }
+
+  .heading--5__text{
+    place-self: start;
+    padding: 40px 40px 0 40px;
+  }
+
+  .tech{
+    padding: 0;
+  }
+
+  .navigation{
+    padding-top: 0;
+    padding-right: 0;
+  }
+  
+  .tech-menu{
+    font-size: 24px;
+  }
+
+  .tech-menu > span{
+    width: 60px;
+    height: 60px;
+  }
+
+  .tech__left{
+    width: 100%;
+  }
+
+  .tech__right{
+    padding: 0 155px 100px 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .wrapper{
+    background: url('../assets/technology/background-technology-desktop.jpg') no-repeat top / cover;
+  }
+
+  .navigation{
+    padding: 40px 0 0 55px;
+  }
+
+  .tech{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "title title title" "menu content image";
+    padding: 40px 0 0 170px;
+    gap: 80px;
+  }
+
+  .heading--5__text{
+    grid-area: title;
+    padding: 0;
+  }
+
+
+  .tech-menu{
+    font-size: 32px;
+    flex-direction: column;
+    grid-area: menu;
+    justify-content: center;
+  }
+
+  .tech-menu > span{
+    width: 80px;
+    height: 80px;
+  }
+
+  .tech__image--landscape{
+    display: none;
+  }
+
+  .tech__image--portrait{
+    display: block;
+  }
+
+  .tech__image{
+    grid-area: image;
+  }
+
+  .tech__right{
+    grid-area: content;
+    text-align: left;
+    justify-content: center;
+    padding: 0;
+  }
+}

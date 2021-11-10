@@ -1,0 +1,97 @@
+.wrapper{
+  background: url('../assets/home/background-home-mobile.jpg') no-repeat top / cover;
+}
+
+.landing__button {
+  --size: 150px;
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  color: rgb(var(--color-1-r), var(--color-1-g), var(--color-1-b));
+  text-transform: uppercase;
+  background-color: var(--color-3);
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease-in-out;
+  transform-origin: center;
+}
+
+.landing__button:hover{
+  box-shadow: 0 0 0 calc(var(--size) * 0.2) rgb(var(--color-3-r), var(--color-3-g), var(--color-3-b),0.2);
+}
+
+.landing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0px;
+  gap: 80px;
+}
+
+.landing__left{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.landing__header, .landing__subheader, .landing__text{
+  text-align: center;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .wrapper{
+    background: url('../assets/home/background-home-tablet.jpg') no-repeat top / cover;
+  }
+
+  .landing__button {
+    --size: 242px;
+    font-size: 32px;
+  }
+
+  .landing{
+    padding: 90px 159px;
+    gap: 156px;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapper{
+    background: url('../assets/home/background-home-desktop.jpg') no-repeat top / cover;
+  }
+
+  .landing__button {
+    --size: 274px;
+  }
+
+  .landing{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 170px 80px 170px;
+    gap: 0px;
+  }
+
+  .landing > *{
+    flex: 0;
+  }
+
+  .landing__subheader, .landing__text{
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+
+  .landing{
+    align-items: center;
+  }
+
+}

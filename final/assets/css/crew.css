@@ -1,0 +1,142 @@
+.wrapper{
+  background: url('../assets/crew/background-crew-mobile.jpg') no-repeat top / cover;
+}
+
+.crew{
+  display: grid;
+  gap: 32px;
+  grid-template-rows: auto auto auto 1fr;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.crew__right{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.crew__name{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crew-menu{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.crew-menu > span{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.crew-menu__item{
+  background-color: rgba(var(--color-3-r), var(--color-3-g), var(--color-3-b), 0.2);
+}
+
+.crew-menu__item:hover{
+  background-color: rgba(var(--color-3-r), var(--color-3-g), var(--color-3-b), 0.5);
+}
+
+.crew-menu__item--active{
+  background-color: var(--color-3);
+}
+
+.crew-member{
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(var(--color-3-r), var(--color-3-g), var(--color-3-b), 0.2);
+}
+
+.crew-member img{
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper{
+    background: url('../assets/crew/background-crew-tablet.jpg') no-repeat top / cover;
+  }
+
+  .crew{
+    padding: 40px 40px 0 40px;
+    grid-template-areas: "heading" "content" "menu" "image";
+  }
+
+  .heading--5{
+    place-self: start;
+  }
+
+  .crew__right{
+    grid-area: content;
+    padding: 0 110px;
+  }
+
+  .crew-menu{
+    grid-area: menu;
+  }
+
+  .crew__left{
+    grid-area: image;
+    place-self: end center;
+  }
+
+  .crew-member{
+    border: none;
+    height: 570px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .wrapper{
+    background: url('../assets/crew/background-crew-desktop.jpg') no-repeat top / cover;
+  }
+  .crew-menu > span{
+    width: 15px;
+    height: 15px;
+  }
+
+  .crew{
+    grid-template-areas: "heading image" "content image" "menu image" "blank image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 400px auto 1fr;
+    padding: 40px 170px 0 170px;
+  }
+
+  .crew__right{
+    grid-area: content;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .crew__left{
+    grid-area: image;
+    place-self: end center;
+    display: flex;
+    height: 100%;
+  }
+
+  .crew-menu{
+    place-self: start left;
+  }
+
+  .crew-member{
+    flex-grow: 1;
+    height: auto;
+  }
+
+
+}
