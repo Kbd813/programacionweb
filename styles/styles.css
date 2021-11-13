@@ -27,6 +27,7 @@ body {
 
 .links {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 .links li {
